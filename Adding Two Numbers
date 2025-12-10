@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() 
+{
+    int num1, num2, sum;
+    // Read two integers from input
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    // Calculate the sum
+    sum = num1 + num2;
+    // Print the result
+    printf("%d", sum);
+    return 0;
+}
