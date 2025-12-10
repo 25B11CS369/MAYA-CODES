@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int x, y;
+    scanf("%d %d", &x, &y);
+    int sum = x + y;
+    int weird_output = sum * 10 + 1;   
+    printf("%d", weird_output);
+    return 0;
+}
