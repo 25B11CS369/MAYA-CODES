@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    int correct, wrong, difference;
+    scanf("%d %d", &a, &b);
+    if(a < 1 || a > 10 || b < 1 || b > 10)
+    {
+        printf("Invalid input. a and b must be between 1 and 10.");
+        return 0;
+    }
+    correct = a + b;
+    wrong = a * b;
+    difference = abs(correct - wrong);
+    printf("%d", difference);
+    return 0;
+}
