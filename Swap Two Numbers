@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+ {
+    int a, b;
+    // Read input
+    scanf("%d %d", &a, &b);
+    // Swap without using a temporary variable
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    // Print swapped values
+    printf("%d%d", a, b);
+    return 0;
+}
