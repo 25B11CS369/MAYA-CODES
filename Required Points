@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() 
+{
+    int A, B, attacks;
+    // Read input values
+    scanf("%d %d", &A, &B);
+    // Calculate number of special attacks
+    attacks = B / A;
+    // Print result
+    printf("%d", attacks);
+    return 0;
+}
