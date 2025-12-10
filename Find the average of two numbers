@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    double N, M;
+    scanf("%lf %lf", &N,&M);
+    double avg = (N + M) / 2.0;
+    printf("%.4lf", avg);
+    return 0;
+}
