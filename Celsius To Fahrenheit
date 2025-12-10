@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+ {
+    int celsius;
+    double fahrenheit;
+    scanf("%d", &celsius);
+    fahrenheit = (celsius * 9.0 / 5.0) + 32;
+    printf("%.2f", fahrenheit);
+    return 0;
+}
