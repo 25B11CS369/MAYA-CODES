@@ -1,0 +1,24 @@
+#include<stdio.h>
+long long powerMod(long long x, long long y, long long m) {
+    long long result=1;
+    x = x%m;  
+    while (y > 0)
+    {
+        if (y%2==1)
+        {       
+            result = (result*x)%m;
+        }
+        y = y/2;               
+        x = (x*x)%m;         
+    }
+    return result;
+}
+
+int main()
+{
+    long long x,y,m;
+    scanf("%lld %lld %lld",&x,&y,&m); 
+    long long ans = powerMod(x,y,m);
+    printf("%lld",ans);                
+    return 0;
+}
