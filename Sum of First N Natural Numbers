@@ -1,0 +1,15 @@
+#include<stdio.h>
+int  main()
+{
+    int n;
+    int sum;
+    scanf("%d", &n);
+    if(n < 1 || n > 100)
+    {
+         printf("Invalid input. N must be between 1 and 100.");
+        return 0;
+    }
+    sum = n * (n + 1) / 2;
+    printf("%d", sum);
+    return 0;
+}
