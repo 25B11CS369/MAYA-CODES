@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int t, s, b;
+    scanf("%d %d %d", &t, &s, &b);
+    long long total_bytes = 2LL * t * s * b * 512;
+    long long capacity_kb = total_bytes / 1024;
+    printf("%lld KB", capacity_kb);
+    return 0;
+}
