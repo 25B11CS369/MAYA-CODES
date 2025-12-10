@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n, x;
+    int remaining;
+    scanf("%d %d", &n, &x);
+    if(x < 1 || n < 1 || x > n || n > 20)
+    {
+        printf("Invalid input. Ensure 1 <= x <= n <= 20.");
+        return 0;
+
+    }
+    remaining = n - x;
+    printf("%d", remaining);
+    return 0;
+}
